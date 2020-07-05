@@ -1,0 +1,20 @@
+.SideBar
+ .Left-header
+  .Left-header__box
+   
+   %h3.Left-header__userName
+    <ユーザー名>
+   .Left-header__iconBox
+    .Left-header__icon
+     = link_to '#' do
+      = icon('fas', 'edit')
+    .Left-header__icon
+     = link_to '#' do
+      = icon('fas', 'cog')
+
+ .GroupList
+  .Group
+   .Group__group-name
+    <グループ>
+   .Group__last-message
+    message

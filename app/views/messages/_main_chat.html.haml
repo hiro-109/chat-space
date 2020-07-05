@@ -1,0 +1,38 @@
+.chat-main
+ .Right-header
+  .Right-header__left-box
+   .Right-header__left-box__group-name
+    group
+   %ul.Right-header__left-box__menber-list
+    member : 
+    %li.Right-header__left-box__menber-list__member
+     name
+  = link_to '#' do
+   .Right-header__right-box
+    Edit
+ .MessageList
+  .Message
+   .Message__info
+    .Message__info__name
+     test000
+    .Message__info__date
+     2020/06/28(Sun) 22:00:00
+   .Message__text
+    こんにちは！
+  .Message
+   .Message__info
+    .Message__info__name
+     test001
+    .Message__info__date
+     2020/06/28(Sun) 22:05:09
+   .Message__text
+    こんばんは
+  ＜チャット画面＞
+ .Footer
+  %form.new-message
+   .input-box
+    %input.input-box-text{type: 'text', placeholder: 'type a message'}
+    %label.image
+     = icon('far', 'image', class: '')
+     %input.Hidden{type: 'file'}
+   %input.Send-btn{type: 'submit', value: 'Send'}
